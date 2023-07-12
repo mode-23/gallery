@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="theme-color" content="a30c0d">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+     />
+     <link
+     rel="icon"
+     type="image/png"
+     href="images/logo.png"
+     sizes="196 x 196"
+     />
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/product.css">
+     <script src="js/main.js" defer></script>
+     <script src="js/pro.js" defer></script>
+     <title>Products</title>
+</head>
+<body>
+     <button class="headerMenu">
+          <span class="notification">0</span>
+          <div class="innerHeader">
+          <i class="fa-solid fa-house"></i>
+          </div>
+     </button>
+     <header>
+          <!-- <div class="holder"> -->
+               <div class="searchHolder">
+                    <input type="search" id="search" placeholder="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+               </div>
+          <div class="logo">
+               <a href=""><img src="images/logo.png" title="playboi carti emblem"></a>
+               <div class="logoText">
+                    <h3>modefy</h3>
+                    <p>store</p>
+               </div>
+          </div>
+          <div class="mediaLinks">
+               <ul class="links">
+                    <li class="active maink">home</li>
+                    <li class="maink">shop</li>
+                    <li class="maink">categories</li>
+                    <li class="maink">about</li>
+                    <li class="maink">mentors</li>
+               </ul>
+          </div>
+          <div class="cartItems">
+               <div class="searchCart iconed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+               </svg>
+               </div>
+               <div class="wishList iconed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+               </div>
+               <div class="cartCount iconed shoppingCart">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M11 7h2a6 6 0 0 1 6 6v6a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1v-6a6 6 0 0 1 6 -6z" />
+                         <path d="M10 7v-1a2 2 0 1 1 4 0v1" />
+                         <path d="M10 15h4" />
+                    </svg>
+                    <h5 class="numberOfproducts">0</h5>
+               </div>
+               <div class="toggleMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
+          </div>
+          <div class="userInfo">
+               <img src="images/user.png" alt="user" class="userImg">
+               <div class="userName">
+                    <h3>Alexander Lyashnek</h3>
+                    <span class="currentBalance">current balance<p class="totalOut">$0.00</p></span>
+               </div>
+               <div class="userInfoCard">
+                    <div class="userEmail userBox">
+                         <label for="email-user">email</label>
+                         <input type="email" id="email-user" placeholder="user@email.com">
+                    </div>
+                    <div class="userPsw userBox">
+                         <label for="psw-user">password</label>
+                         <input type="password" id="psw-user" placeholder="password">
+                    </div>
+                    <button class="submitUser">sign in</button>
+               </div>
+          </div>
+     <!-- </div> -->
+     </header>
+     <section class="innerCart">
+          <div class="holder">
+               <div class="cartsContainer">
+                    <div class="payments">
+                         <div class="paymentBox">
+                              <h3>discount</h3>
+                              <div class="payInfo">
+                                   <p><span class="discount">10</span>%</p>
+                              </div>
+                         </div>
+                         <div class="paymentBox">
+                              <h3>delivrary</h3>
+                              <div class="payInfo">
+                                   <p class="delivrary">$10.00</p>
+                              </div>
+                         </div>
+                         <div class="paymentBox">
+                              <h3>total</h3>
+                              <div class="payInfo">
+                                   <p class="total">$0.00</p>
+                              </div>
+                         </div>
+                         <div class="paymentBox active">
+                              <h3>subtotal</h3>
+                              <div class="payInfo">
+                                   <p class="subTotal">$0.00</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="promoAndPayments">
+                         <div class="promoCode">
+                              <input type="text" class="code" placeholder="enter promo code">
+                              <button class="apply btnS">apply discount</button>
+                         </div>
+                         <div class="checkout">
+                              <button class="checkoutBtn btnS">checkout</button>
+                              <button class="cartio btnS"><i class="fa-solid fa-basket-shopping"></i></button>
+                         </div>
+                    </div>
+                    <table>
+                         <thead>
+                              <tr>
+                                   <td>description</td>
+                                   <td>quantity</td>
+                                   <td>price</td>
+                                   <td>remove</td>
+                              </tr>
+                         </thead>
+                         <tbody class="tbody">
+                         </tbody>
+                    </table>
+                    <p class="EmptyOrNot">your cart is currently empty.</p>
+               </div>
+               <p class="lorem"></p>
+          </div>
+     </section>
+     <main class="bigTitle">
+          <div class="holder">
+                         <h1>catalog</h1>
+                         <p class="sectionName">(all products)</p>
+          <div class="searchHolder-1">
+               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+               </svg>
+               <input type="text" class="searchProduct" placeholder="search products">
+               <div class="closeSearch" title="reset filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <circle cx="12" cy="12" r="9" />
+                         <path d="M10 10l4 4m0 -4l-4 4" />
+                    </svg>
+               </div>
+          </div>
+          </div>
+     </main>
+     <section class="filter">
+               <div class="filterHeader holder">
+                    <h3 class="hideShowFilter">hide filter</h3>
+                    <div class="productsInformation">
+                         <span><span class="numberOfAvailableProducts"></span> <span class="productOrProducts">products</span></span>
+                         <select class="select">
+                              <option value="default">default</option>
+                              <option value="a-z">Alphabetically, A-Z</option>
+                              <option value="z-a">Alphabetically, Z-A</option>
+                              <option value="low-high">Price, Low to High</option>
+                              <option value="high-low">Price, High to Low</option>
+                         </select>
+                    </div>
+               </div>
+               <div class="filterBody holder">
+                    <div class="leftFilter filterPart">
+                         <h1>filter by</h1>
+                         <div class="checkBoxHolder">
+                              <div class="check">
+                              <div class="checkBox active" data-type=".all"></div>
+                              <span class="checkBoxName">all products</span>
+                              </div>
+                              <p class="checkBoxCount" >(1)</p>
+                         </div>
+                         <ul class="filterList">
+                         </ul>
+                         <div class="filterBox">
+                              <div class="filterHeader-1">
+                                   <p>brand</p>
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <polyline points="6 9 12 15 18 9" />
+                                   </svg>
+                              </div>
+                              <div class="filterBody-1">
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".nike"></div>
+                                        <span class="checkBoxName">nike</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".adidas"></div>
+                                        <span class="checkBoxName">adidas</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".reebok"></div>
+                                        <span class="checkBoxName">reebok</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="filterBox">
+                              <div class="filterHeader-1">
+                                   <p>size</p>
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <polyline points="6 9 12 15 18 9" />
+                                   </svg>
+                              </div>
+                              <div class="filterBody-1">
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".seven"></div>
+                                        <span class="checkBoxName">7</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".eight"></div>
+                                        <span class="checkBoxName">8</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".nine"></div>
+                                        <span class="checkBoxName">9</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="filterBox">
+                              <div class="filterHeader-1">
+                                   <p>gender</p>
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="1" stroke="#191919" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <polyline points="6 9 12 15 18 9" />
+                                   </svg>
+                              </div>
+                              <div class="filterBody-1">
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".men"></div>
+                                        <span class="checkBoxName">men</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".women"></div>
+                                        <span class="checkBoxName">women</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                                   <div class="checkBoxHolder">
+                                        <div class="check">
+                                        <div class="checkBox" data-type=".unisex"></div>
+                                        <span class="checkBoxName">unisex</span>
+                                        </div>
+                                        <p class="checkBoxCount">(1)</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="rightFilter filterPart">
+                         <div class="result active">
+                              <h3>We couldn't find any matches for <span class="finalResult"></span>.</h3>
+                         </div>
+                         <div class="filterProduct productItem men seven nike all">
+                              <div class="imgHolder-1">
+                                   <img src="images/nike.webp" class="brand">
+                                   <img src="images/landing.png" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">james (XS)</h3>
+                              <h3 class="productPrice">$134.69</h3>
+                         </div>
+                         <div class="filterProduct productItem men eight reebok all">
+                              <div class="imgHolder-1">
+                                   <img src="images/reebok.webp" class="brand">
+                                   <img src="images/DC1975-500-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">lebron sneakers</h3>
+                              <h3 class="productPrice">$10.69</h3>
+                         </div>
+                         <div class="filterProduct productItem men nine nike all">
+                              <div class="imgHolder-1">
+                                   <img src="images/nike.webp" class="brand">
+                                   <img src="images/DC9836-086-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">jigga</h3>
+                              <h3 class="productPrice">$19.69</h3>
+                         </div>
+                         <div class="filterProduct productItem unisex seven adidas all">
+                              <div class="imgHolder-1">
+                                   <img src="images/adidas.webp" class="brand">
+                                   <img src="images/DJ9986-100-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">cartier</h3>
+                              <h3 class="productPrice">$34.69</h3>
+                         </div>
+                         <div class="filterProduct productItem women eight adidas all">
+                              <div class="imgHolder-1">
+                                   <img src="images/adidas.webp" class="brand">
+                                   <img src="images/DM1058-200-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">blazer low</h3>
+                              <h3 class="productPrice">$34.69</h3>
+                         </div>
+                         <div class="filterProduct productItem unisex eight reebok all">
+                              <div class="imgHolder-1">
+                                   <img src="images/reebok.webp" class="brand">
+                                   <img src="images/DM1060-001-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">afi crafter flykit</h3>
+                              <h3 class="productPrice">$14.69</h3>
+                         </div>
+                         <div class="filterProduct productItem men seven nike all">
+                              <div class="imgHolder-1">
+                                   <img src="images/nike.webp" class="brand">
+                                   <img src="images/MS327LF1-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">arjen snookies</h3>
+                              <h3 class="productPrice">$28.99</h3>
+                         </div>
+                         <div class="filterProduct productItem men seven reebok all">
+                              <div class="imgHolder-1">
+                                   <img src="images/reebok.webp" class="brand">
+                                   <img src="images/1201A482-100-2.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">lifestyle 327</h3>
+                              <h3 class="productPrice">$38.99</h3>
+                         </div>
+                         <div class="filterProduct productItem men nine adidas all">
+                              <div class="imgHolder-1">
+                                   <img src="images/adidas.webp" class="brand">
+                                   <img src="images/15148_61c44d2f24cf90.44447723_1BM00762-199-1.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">timberland colorfull sneakers</h3>
+                              <h3 class="productPrice">$79.99</h3>
+                         </div>
+                         <div class="filterProduct productItem men nine nike all">
+                              <div class="imgHolder-1">
+                                   <img src="images/nike.webp" class="brand">
+                                   <img src="images/15208_61c44b0e538aa3.98337408_1BM01101-124-1_2b483de0-e74f-432b-910f-0b2e174f8aad.webp" class="productImg">
+                                   <button class="addToCart">add to cart
+                                   </button>
+                              </div>
+                              <h3 class="productName">timberland dark sneakers</h3>
+                              <h3 class="productPrice">$69.99</h3>
+                         </div>
+                    </div>
+               </div>
+     </section>
+     <footer>
+          <div class="holder">
+               <div class="footerHolder">
+                    <div class="footerHeader">
+                         <img src="images/logo.png" alt="">
+                         <i class="fa-solid fa-angle-up scrollToTop"></i>
+                    </div>
+                    <div class="footerBody">
+                         <div class="footerContent">
+                              <div class="leftFooter">
+                                   <h3>this is where your <br> dreams come true, <br> we do amazing!</h3>
+                                   <button class="circleCatalog">newsletter</button>
+                                   <div class="socialLinks">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-dribbble"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                   </div>
+                              </div>
+                              <div class="rightFooter">
+                                   <ul class="mainFooter">
+                                        <li class="mainLi">
+                                             <p>ahmedbkd.258@gmail.com</p>
+                                             <p>+216-56-627-517</p>
+                                        </li>
+                                        <li class="mainLi">
+                                             <p>new york</p>
+                                             <ul class="underFooter">
+                                                  <li>store 01</li>
+                                                  <li>603 lake forest dr.</li>
+                                                  <li>new york</li>
+                                                  <li>ny 12603</li>
+                                             </ul>
+                                        </li>
+                                        <li class="mainLi">
+                                             <p>brooklyn</p>
+                                             <ul class="underFooter">
+                                                  <li>store 02</li>
+                                                  <li>603 lake forest dr.</li>
+                                                  <li>new york</li>
+                                                  <li>ny 12603</li>
+                                             </ul>
+                                        </li>
+                                        <li class="mainLi">
+                                             <p>miami</p>
+                                             <ul class="underFooter">
+                                                  <li>store 03</li>
+                                                  <li>603 lake forest dr.</li>
+                                                  <li>new york</li>
+                                                  <li>ny 12603</li>
+                                             </ul>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="footerFooter">
+                              <span>&copy; 2022 by Mode</span>
+                              <span>all rights reserved</span>
+                              <span>privicy policy</span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+</body>
+</html>

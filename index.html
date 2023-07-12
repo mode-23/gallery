@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="theme-color" content="a30c0d">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+     />
+     <link
+     rel="icon"
+     type="image/png"
+     href="images/logo.png"
+     sizes="196 x 196"
+     />
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/script.js" defer></script>
+     <script src="js/main.js" defer></script>
+     <title>E-Commerce | Modefy edition</title>
+</head>
+<body>
+     <button class="headerMenu">
+          <span class="notification">0</span>
+          <div class="innerHeader">
+          <i class="fa-solid fa-house"></i>
+          </div>
+     </button>
+     <header>
+          <!-- <div class="holder"> -->
+               <div class="searchHolder">
+                    <input type="search" id="search" placeholder="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+               </div>
+          <div class="logo">
+               <a href="index.html"><img src="images/logo.png" title="playboi carti emblem"></a>
+               <div class="logoText">
+                    <h3>modefy</h3>
+                    <p>store</p>
+               </div>
+          </div>
+          <div class="mediaLinks">
+               <ul class="links">
+                    <li class="active maink">home</li>
+                    <li class="maink">shop</li>
+                    <li class="maink">categories</li>
+                    <li class="maink">about</li>
+                    <li class="maink">mentors</li>
+               </ul>
+          </div>
+          <div class="cartItems">
+               <div class="searchCart iconed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+               </svg>
+               </div>
+               <div class="wishList iconed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+               </div>
+               <div class="cartCount iconed shoppingCart">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M11 7h2a6 6 0 0 1 6 6v6a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1v-6a6 6 0 0 1 6 -6z" />
+                         <path d="M10 7v-1a2 2 0 1 1 4 0v1" />
+                         <path d="M10 15h4" />
+                    </svg>
+                    <h5 class="numberOfproducts">0</h5>
+               </div>
+               <div class="toggleMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
+          </div>
+          <div class="userInfo">
+               <img src="images/user.png" alt="user" class="userImg">
+               <div class="userName">
+                    <h3>Alexander Lyashnek</h3>
+                    <p class="totalOut">$0.00</p>
+               </div>
+               <div class="userInfoCard">
+                    <div class="userEmail userBox">
+                         <label for="email-user">email</label>
+                         <input type="email" id="email-user" placeholder="user@email.com">
+                    </div>
+                    <div class="userPsw userBox">
+                         <label for="psw-user">password</label>
+                         <input type="password" id="psw-user" placeholder="password">
+                    </div>
+                    <button class="submitUser">sign in</button>
+               </div>
+          </div>
+     <!-- </div> -->
+     </header>
+     <section class="innerCart">
+          <div class="holder">
+               <div class="cartsContainer">
+                    <div class="payments">
+                         <div class="paymentBox">
+                              <h3>discount</h3>
+                              <div class="payInfo">
+                                   <p><span class="discount">10</span>%</p>
+                              </div>
+                         </div>
+                         <div class="paymentBox">
+                              <h3>delivrary</h3>
+                              <div class="payInfo">
+                                   <p class="delivrary">$10.00</p>
+                              </div>
+                         </div>
+                         <div class="paymentBox">
+                              <h3>total</h3>
+                              <div class="payInfo">
+                                   <p class="total">$0.00</p>
+                              </div>
+                         </div>
+                         <div class="paymentBox active">
+                              <h3>subtotal</h3>
+                              <div class="payInfo">
+                                   <p class="subTotal">$0.00</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="promoAndPayments">
+                         <div class="promoCode">
+                              <input type="text" class="code" placeholder="enter promo code">
+                              <button class="apply btnS">apply discount</button>
+                         </div>
+                         <div class="checkout">
+                              <button class="checkoutBtn btnS">checkout</button>
+                              <button class="cartio btnS"><i class="fa-solid fa-basket-shopping"></i></button>
+                         </div>
+                    </div>
+                    <table>
+                         <thead>
+                              <tr>
+                                   <td>description</td>
+                                   <td>quantity</td>
+                                   <td>price</td>
+                                   <td>remove</td>
+                              </tr>
+                         </thead>
+                         <tbody class="tbody">
+                         </tbody>
+                    </table>
+                    <p class="EmptyOrNot">your cart is currently empty.</p>
+               </div>
+               <p class="lorem"></p>
+          </div>
+     </section>
+<section class="landing">
+               <div class="boxImg">
+                    <img src="images/landing-2.webp" alt="">
+               </div>
+               <div class="rightPart">
+               <div class="hotSales">
+                    <p>hot sales</p>
+                    <h2>a dark dress will brighten up your evening</h2>
+                    <div class="purchasePrice">
+                         <h3 class="productPrice">-10% discount</h3>
+                         <button>shop now</button>
+                    </div>
+               </div>
+               <div class="customers">
+                    <div class="clients">
+                         <h3>100k</h3>
+                         <p>customers</p>
+                    </div>
+                    <div class="collection">
+                         <h3>new collection</h3>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus hic excepturi harum.</p>
+                    </div>
+               </div>
+               </div>
+</section>
+<section class="newOfferSection">
+     <main class="incoming">
+          <div class="leftComing">
+               <div class="insideLeft">
+                    <h3>new arrival</h3>
+                    <h1>New mode evening dress design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat numquam repudiandae consequatur corrupti dolor!</p>
+               </div>
+               <div class="insideRight">
+                    <img src="images/HBN067-2.webp" alt="">
+               </div>
+          </div>
+          <div class="rightComing">
+               <div class="insideLeft">
+               <h3>latest news</h3>
+               <h1>Our new dress collection</h1>
+               <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="insideRight">
+               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M11 7h2a6 6 0 0 1 6 6v6a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1v-6a6 6 0 0 1 6 -6z" />
+                    <path d="M10 7v-1a2 2 0 1 1 4 0v1" />
+                    <path d="M10 15h4" />
+               </svg>
+          </div>
+          </div>
+     </main>
+     <section class="newOfferSection">
+          <div class="holder">
+               <div class="newHeader">
+                    <h3 class="sectionTitle">our collection</h3>
+                    <div class="catalog">
+                         <button class="up" id="up"><i class="fa-solid fa-caret-up"></i></button>
+                         <button class="down" id="down"><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                    </div>
+                    <div class="collectionBody">
+                         <div class="leftCol">
+                              <ul class="leftColLinks">
+                                   <li class="active" data-link=".one"><p>christian dior <span>hot</span></p><p>01</p></li>
+                                   <li data-link=".two"><p>yves saint laurent SS</p><p>02</p></li>
+                                   <li data-link=".three"><p>givenchy FW</p><p>03</p></li>
+                                   <li data-link=".four"><p>red september</p><p>04</p></li>
+                                   <li data-link=".five"><p>gaultier paris FW</p><p>05</p></li>
+                                   <li data-link=".six"><p>sol selvinanova olga</p><p>06</p></li>
+                              </ul>
+                              <button class="circleCatalog">go to the catalog</button>
+                         </div>
+                         <div class="rightCol">
+                         <div class="rightColContainer one">
+                              <!-- <h3 class="sectionTitle">christian dior <span>01</span></h3> -->
+                              <div class="rightColHolder">
+                                   <div class="collectionBox productItem gridSpan2">
+                                   <div class="addtocartHolder">
+                                        <div class="addtocartcontainer">
+                                   <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                              </div>
+                                   </div>
+                                        <img src="images/1201A482-100-2.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">holy smokes</h1>
+                                             <p class="productPrice">$665.55</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/15148_61c44d2f24cf90.44447723_1BM00762-199-1.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">reddish</h1>
+                                             <p class="productPrice">$399.99</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/15208_61c44b0e538aa3.98337408_1BM01101-124-1_2b483de0-e74f-432b-910f-0b2e174f8aad.webp" class="productImg">
+                                        <div class="productHold">
+                                        <h1 class="productName">hellcat</h1>
+                                        <p class="productPrice">$465.55</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="rightColContainer two">
+                              <!-- <h3 class="sectionTitle">Yves Saint Laurent SS<span>02</span></h3> -->
+                              <div class="rightColHolder">
+                                   <div class="collectionBox productItem gridSpan2">
+                                   <div class="addtocartHolder">
+                                        <div class="addtocartcontainer">
+                                   <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                              </div>
+                                   </div>
+                                        <img src="images/15216_61c449febbbc60.96506722_1EW90013-449-1.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">holy smokes</h1>
+                                             <p class="productPrice">$665.55</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/DC1975-500-2.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">reddish</h1>
+                                             <p class="productPrice">$399.99</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/DC9836-086-2.webp" class="productImg">
+                                        <div class="productHold">
+                                        <h1 class="productName">hellcat</h1>
+                                        <p class="productPrice">$465.55</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="rightColContainer three">
+                              <!-- <h3 class="sectionTitle">Givenchy FW<span>03</span></h3> -->
+                              <div class="rightColHolder">
+                                   <div class="collectionBox productItem gridSpan2">
+                                   <div class="addtocartHolder">
+                                        <div class="addtocartcontainer">
+                                   <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                              </div>
+                                   </div>
+                                        <img src="images/DJ9986-100-2.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">holy smokes</h1>
+                                             <p class="productPrice">$665.55</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/DM1058-200-2.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">reddish</h1>
+                                             <p class="productPrice">$399.99</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/DM1060-001-2.webp" class="productImg">
+                                        <div class="productHold">
+                                        <h1 class="productName">hellcat</h1>
+                                        <p class="productPrice">$465.55</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="rightColContainer four">
+                              <!-- <h3 class="sectionTitle">Red September<span>04</span></h3> -->
+                              <div class="rightColHolder">
+                                   <div class="collectionBox productItem gridSpan2">
+                                   <div class="addtocartHolder">
+                                        <div class="addtocartcontainer">
+                                   <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                              </div>
+                                   </div>
+                                        <img src="images/DV3209-100-2.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">holy smokes</h1>
+                                             <p class="productPrice">$665.55</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/DV3210-100-2.webp" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">reddish</h1>
+                                             <p class="productPrice">$399.99</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/MS327LF1-2.webp" class="productImg">
+                                        <div class="productHold">
+                                        <h1 class="productName">hellcat</h1>
+                                        <p class="productPrice">$465.55</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="rightColContainer five">
+                              <!-- <h3 class="sectionTitle">Gaultier Paris FW<span>05</span></h3> -->
+                              <div class="rightColHolder">
+                                   <div class="collectionBox productItem gridSpan2">
+                                   <div class="addtocartHolder">
+                                        <div class="addtocartcontainer">
+                                   <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                              </div>
+                                   </div>
+                                        <img src="images/WLR-SHORTS-768x768.png" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">holy smokes</h1>
+                                             <p class="productPrice">$665.55</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/WHOLE-LOTTA-RED-VINYL-768x768.png" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">reddish</h1>
+                                             <p class="productPrice">$399.99</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/WHOLE-LOTTA-RED-VINYL-1-768x768.png" class="productImg">
+                                        <div class="productHold">
+                                        <h1 class="productName">hellcat</h1>
+                                        <p class="productPrice">$465.55</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="rightColContainer six">
+                              <!-- <h3 class="sectionTitle">Sol Selvinanova Olga<span>06</span></h3> -->
+                              <div class="rightColHolder">
+                                   <div class="collectionBox productItem gridSpan2 ">
+                                   <div class="addtocartHolder">
+                                        <div class="addtocartcontainer">
+                                   <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                              </div>
+                                   </div>
+                                        <img src="images/MIDDLE-FINGER-BLANKET.png" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">holy smokes</h1>
+                                             <p class="productPrice">$665.55</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem ">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/TEEN-ECSTASY-SLEEVELESS-TEE-768x768.png" class="productImg">
+                                        <div class="productHold">
+                                             <h1 class="productName">reddish</h1>
+                                             <p class="productPrice">$399.99</p>
+                                             </div>
+                                   </div>
+                                   <div class="collectionBox productItem ">
+                                        <div class="addtocartHolder">
+                                             <div class="addtocartcontainer">
+                                        <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                                   </div>
+                                        </div>
+                                        <img src="images/WLR-DENIM-JACKET-1-768x768.png" class="productImg">
+                                        <div class="productHold">
+                                        <h1 class="productName">hellcat</h1>
+                                        <p class="productPrice">$465.55</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         </div>
+                    </div>
+          </div>
+     </section>
+     <section class="newArrival">
+          <div class="arrowHolder previous">
+               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="15 6 9 12 15 18" />
+                  </svg>
+          </div>
+          <div class="sliderContainer">
+          <div class="slider">
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product1</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <circle cx="12" cy="12" r="2" />
+                              <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                         </svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti2.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$155.99</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product2</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti3.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$34.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product3</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$64.99</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product4</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti4.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$55.00</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product5</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti5.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$120.50</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product6</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti6.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$114.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product7</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti7.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$199.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product8</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti8.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$199.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product9</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti9.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$199.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product10</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti10.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$199.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product11</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti11.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$199.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+               <article class="productItem">
+                    <div class="boxHeader" data-review="3 reviews">
+                         <h3 class="productName">Product12</h3>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="productPreview icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+                    </div>
+                    <div class="boxBody">
+                         <img src="images/carti12.png" class="productImg">
+                    </div>
+                    <div class="previewitem">
+                         <div class="itemCart">
+                              <h3 class="productPrice">$199.69</h3>
+                              <button class="addToCart"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></button>
+                         </div>
+                         <div class="rate">
+                              <div class="stars">
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                              </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque quaerat eaque id deleniti placeat.</p>
+                         </div>
+                    </div>
+               </article>
+          </div>
+     </div>
+          <div class="arrowHolder next">
+               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="9 6 15 12 9 18" />
+               </svg>
+          </div>
+     </section>
+</section>
+<section class="newOfferSection">
+     <div class="holder">
+          <div class="newHeader">
+               <h3 class="sectionTitle">our categories</h3>
+               <div class="catalog">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <button class="goToCatalog">go to catalog</button>
+               </div>
+          </div>
+          <div class="newBody">
+               <div class="newBodyContainer">
+               <div class="offerPoduct">
+                    <img src="images/517x654-AF1-GTX-LEMKUS.webp">
+                    <div class="productInfo">
+                    <div class="productsNumHolder">
+                         <h3 class="categoryName">holidy decorations</h3>
+                         <h5 class="numberOfCategories">54</h5>
+                    </div>
+                    <a href="#" class="gotocategory"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+               </div>
+               <div class="offerPoduct gridSpan2">
+                    <img src="images/Nike-Air-Max-1-517x654.webp">
+                    <div class="productInfo">
+                    <div class="productsNumHolder">
+                         <h3 class="categoryName">themed dress</h3>
+                         <h5 class="numberOfCategories">54</h5>
+                    </div>
+                    <a href="#" class="gotocategory"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+               </div>
+               <div class="offerPoduct">
+                    <img src="images/517x654-AIR-JORDAN-1-PATENT-LEMKUS.webp">
+                    <div class="productInfo">
+                    <div class="productsNumHolder">
+                         <h3 class="categoryName">classic suits</h3>
+                         <h5 class="numberOfCategories">54</h5>
+                    </div>
+                    <a href="#" class="gotocategory"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+               </div>
+               <div class="offerPoduct">
+                    <img src="images/517x654-Converse-Pokemon_Lemkus.webp">
+                    <div class="productInfo">
+                    <div class="productsNumHolder">
+                         <h3 class="categoryName">homewear</h3>
+                         <h5 class="numberOfCategories">54</h5>
+                    </div>
+                    <a href="#" class="gotocategory"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+               </div>
+               <div class="offerPoduct">
+                    <img src="images/517x654-NIKE-AIR-MAX-90-LEMKUS_bed6352e-1105-4423-83dc-53c59b6ff951.webp">
+                    <div class="productInfo">
+                    <div class="productsNumHolder">
+                         <h3 class="categoryName">manufaction fabrics</h3>
+                         <h5 class="numberOfCategories">54</h5>
+                    </div>
+                    <a href="#" class="gotocategory"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+               </div>
+          </div>
+          </div>
+     </div>
+</section>
+<footer>
+     <div class="holder">
+          <div class="footerHolder">
+               <div class="footerHeader">
+                    <img src="images/logo.png" alt="">
+                    <i class="fa-solid fa-angle-up scrollToTop"></i>
+               </div>
+               <div class="footerBody">
+                    <div class="footerContent">
+                         <div class="leftFooter">
+                              <h3>this is where your <br> dreams come true, <br> we do amazing!</h3>
+                              <button class="circleCatalog">newsletter</button>
+                              <div class="socialLinks">
+                                   <i class="fa-brands fa-instagram"></i>
+                                   <i class="fa-brands fa-facebook-f"></i>
+                                   <i class="fa-brands fa-dribbble"></i>
+                                   <i class="fa-brands fa-twitter"></i>
+                              </div>
+                         </div>
+                         <div class="rightFooter">
+                              <ul class="mainFooter">
+                                   <li class="mainLi">
+                                        <p>ahmedbkd.258@gmail.com</p>
+                                        <p>+216-56-627-517</p>
+                                   </li>
+                                   <li class="mainLi">
+                                        <p>new york</p>
+                                        <ul class="underFooter">
+                                             <li>store 01</li>
+                                             <li>603 lake forest dr.</li>
+                                             <li>new york</li>
+                                             <li>ny 12603</li>
+                                        </ul>
+                                   </li>
+                                   <li class="mainLi">
+                                        <p>brooklyn</p>
+                                        <ul class="underFooter">
+                                             <li>store 02</li>
+                                             <li>603 lake forest dr.</li>
+                                             <li>new york</li>
+                                             <li>ny 12603</li>
+                                        </ul>
+                                   </li>
+                                   <li class="mainLi">
+                                        <p>miami</p>
+                                        <ul class="underFooter">
+                                             <li>store 03</li>
+                                             <li>603 lake forest dr.</li>
+                                             <li>new york</li>
+                                             <li>ny 12603</li>
+                                        </ul>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="footerFooter">
+                         <span>&copy; 2022 by Mode</span>
+                         <span>all rights reserved</span>
+                         <span>privicy policy</span>
+                    </div>
+               </div>
+          </div>
+     </div>
+</footer>
+</body>
+</html>
